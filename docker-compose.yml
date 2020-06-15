@@ -1,0 +1,13 @@
+version: "2"
+services:
+  kubectl-host:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kubectl-host
+    container_name: kubectl-host
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    network_mode: "host"
+    volumes:
+      - ~/.localkube/:/root/.kube/
