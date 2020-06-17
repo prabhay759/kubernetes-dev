@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 WORKDIR /root
-COPY bootstrap.sh ./
+COPY install.sh ./
 
 RUN apt-get update && apt-get -y install --no-install-recommends \
   gnupg \
@@ -11,6 +11,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
   ca-certificates \
   zsh \
   tmux \
+  python \
   && rm -rf /var/lib/apt/lists/*
 
 ENV SHELL /usr/bin/zsh

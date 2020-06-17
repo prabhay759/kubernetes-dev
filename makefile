@@ -1,4 +1,4 @@
-compose-build:
+compose-run:
 	mkdir -p ~/.localkube/ && kubectl config view --raw > ~/.localkube/config && docker-compose up
-classic-build:
+classic-run:
 	./run.sh

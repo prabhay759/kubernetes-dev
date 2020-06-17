@@ -3,8 +3,8 @@
 A docker container to create local dev environment to for managing kubernetes. To spawn a new local kubernetes dev container, run one of the below make commands.
 
 ```sh
-make compose-build
-make classic-build
+make compose-run
+make classic-run
 ```
 
 ## Troubleshoot
